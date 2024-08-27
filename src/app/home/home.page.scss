@@ -7,7 +7,7 @@ ion-header ion-toolbar {
 }
 
 .category-select {
-  --background: #8e44ad;
+  --background: #111111;
   border-radius: 8px;
   margin-bottom: 10px;
 }
@@ -16,6 +16,7 @@ ion-select {
   --placeholder-color: #ffffff;
   --placeholder-opacity: 1;
   font-weight: bold;
+  color: #ffffff;
 }
 
 .product-card {

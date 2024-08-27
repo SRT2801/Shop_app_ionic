@@ -27,17 +27,17 @@ export class HomePage implements OnInit {
   async ngOnInit() {
     const url = environment.URL_BASE + "products";
     this.products = await this.httpSrv.get<Result[]>(url);
-    this.filteredProducts = this.products; // Inicialmente mostrar todos los productos
+    this.filteredProducts = this.products;
   }
 
-  // Función para manejar el filtrado de productos por categoría
+
   public filterByCategory(event: any) {
     const selectedCategory = event.detail.value;
 
     if (selectedCategory) {
       this.filteredProducts = this.products.filter(product => product.category === selectedCategory);
     } else {
-      this.filteredProducts = this.products; // Mostrar todos los productos si no hay categoría seleccionada
+      this.filteredProducts = this.products;
     }
   }
 
@@ -46,6 +46,6 @@ export class HomePage implements OnInit {
   }
 
   trackByFn(index: number, item: Result) {
-    return item.id; // or index
+    return item.id;
   }
 }

@@ -41,7 +41,7 @@ export class DetailsPage implements OnInit {
         duration: 2000,
         position: 'top',
         cssClass: 'custom-toast',
-        
+
       });
       await toast.present();
     }
