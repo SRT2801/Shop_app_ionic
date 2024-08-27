@@ -1,0 +1,88 @@
+.product-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  padding-top: 20px;
+}
+
+.close-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  --padding-start: 0;
+  --padding-end: 0;
+  --color: #666;
+}
+
+h1 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.product-info {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.category {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.price {
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 1rem;
+  font-weight: bold;
+  align-self: flex-start;
+  margin-bottom: 0.5rem;
+}
+
+.description {
+  text-align: left;
+  margin-bottom: 1rem;
+}
+
+.rating-info {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.rating {
+  font-weight: bold;
+}
+
+ion-footer {
+  ion-toolbar {
+    --padding-top: 0;
+    --padding-bottom: 0;
+    --min-height: 56px;
+  }
+
+  .agregar {
+    margin: 0;
+    --background: #8e44ad;
+    --color: white;
+  }
+}
+
+.custom-toast {
+  --background: #8e44ad ;
+  --color: white;
+  text-align: center;
+}

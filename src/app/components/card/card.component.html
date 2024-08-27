@@ -1,0 +1,18 @@
+<ion-card mode="ios"  (click)="click(id)"  expand="block" (click)="setOpen(true)">
+  <img [src]="image" alt="">
+  <ion-card-header>
+    <ion-card-title>{{ title | slice: 0:20}}...</ion-card-title>
+  </ion-card-header>
+
+  <ion-card-content >
+    <p>
+      {{ category}}
+    </p>
+    <p>
+      {{ price | currency:'USD'}}
+    </p>
+
+  </ion-card-content>
+
+
+</ion-card>
